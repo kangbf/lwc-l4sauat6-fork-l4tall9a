@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/kangbf.lwc-l4sauat6-fork-l4tall9a",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve Aao3H8XNbwYTHdN7NRaY --open"
+  }
+}

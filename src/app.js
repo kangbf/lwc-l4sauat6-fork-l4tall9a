@@ -1,27 +1,18 @@
-import { LightningElement } from "lwc";
-
+// import module elements
+import { LightningElement } from 'lwc';
+// declare class to expose the component
 export default class App extends LightningElement {
-  title = "Welcome to Lightning Web Components!";
-
-  showFeatures = true;
-
-  /**
-   * Getter for the features property
-   */
-  get features() {
-    return [
-      {
-        label: "Learn in the browser.",
-        icon: "utility:edit",
-      },
-      {
-        label: "View changes to code instantly with Live Compilation.",
-        icon: "utility:refresh",
-      },
-      {
-        label: "Style your components with SLDS.",
-        icon: "utility:brush",
-      },
-    ];
-  }
+   name = 'Electra X4';
+   description = 'A sweet bike built for comfort.';
+   category = 'Mountain';
+   material = 'Steel';
+   price = '$2,700';
+   pictureUrl = 'https://s3-us-west-1.amazonaws.com/sfdc-demo/ebikes/electrax4.jpg';
+   ready = false;
+   // use lifecycle hook
+   connectedCallback() {
+       setTimeout(() => {
+           this.ready = true;
+       }, 3000);
+   }
 }
